@@ -1,6 +1,6 @@
 name: 'Export all secrets to environment variables and write to file'
 description: 'Utility action that exports all github secrets environment variables and write to file.'
-author: 'ThaiND'
+author: '0ndt'
 inputs:
   secrets:
     required: true
@@ -31,7 +31,7 @@ inputs:
     required: false
     description: 'Override existing environment variables'
 runs:
-  using: 'node16'
+  using: 'node20'
   main: 'dist/index.js'
 branding:
   icon: command
